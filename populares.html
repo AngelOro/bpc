@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <!-- build:css css/index.css -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/Style.css" />
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.css" />
+  <!-- endbuild -->
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="index.html">Skills</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="about.html"><span class="oi oi-people"></span> Nosotros <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html"><span class="oi oi-plus"></span> Únete</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="populares.html"><span class="oi oi-bar-chart"></span> Proyectos Populares</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><span class="oi oi-document"></span> Términos y Condiciones</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">Skills</h1>
+      <p class="lead">
+        Esta aplicación te permitirá encontrar las habilidades que tienen los habitantes de Medellín
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Proyectos Populares</li>
+    </ol>
+  </nav>
+
+  <hr>
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Populares</a>
+      <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Tajetas</a>
+      <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Comentarios</a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Categoría</th>
+              <th scope="col">Nombre Proyecto</th>
+              <th scope="col">Servicios prestados al mes</th>
+              <th scope="col">Promedio Calificación (1-5)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <th>Gourmet</th>
+              <td>Panadería Elena</td>
+              <td>150</td>
+              <td>4.9</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <th>Hogar</th>
+              <td>Macramé</td>
+              <td>98</td>
+              <td>4.5</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <th>Cuidado Personal</th>
+              <td>Natucol</td>
+              <td>87</td>
+              <td>4.2</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" id="btn-index" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ¿Cómo funciona Skills?
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <p>Aquí puedes subir tus habilidades o emprendimientos y prestar tus servicios.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" id="btn-index" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ¿A quién va dirigida?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <p>Es una aplicación pensada para los habitantes de la ciudad de Medellín - Colombia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" id="btn-index" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                ¿Por qué se creo Skills?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <p>Estamos pasando en momentos dificiles, esto se convierte en una oportunidad en donde puedas ofrecer servicios
+                mostrando las habilidades que tienes, sin poner en riesgo tu salud. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+  </div>
+
+
+<!-- Se modifica el sistema de grid a flex -->
+</div>
+  <footer class="footer-nav navbar-light bg-light">
+    <div class="row">
+      <div class="col-sm-4 d-flex flex-column">
+        <a href="https://instragram.com">Instragram</a>
+        <a href="https://twitter.com">Twitter</a>
+        <a href="https://youtube.com">YouTube</a>
+      </div>
+      <div class="col-sm-4">
+        <address>
+          <p><span class="oi oi-map-marker footer-icon"></span> Medellín - Colombia</p>
+          <p><span class="oi oi-phone footer-icon"></span> +(57) 13933219</p>
+          <p><span class="oi oi-envelope-closed footer-icon"></span> skills_med@hhh.com</p>
+        </address>
+      </div>
+      <div class="col-sm-4 d-flex flex-column align-items-end">
+        <a href="https://github.com">Nosotros</a>
+        <a href="https://instragram.com">Términos y Codiciones</a>
+        <a href="https://twitter.com">Contacto</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- build:js js/main.js -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>  
+  <!-- endbuild -->
+</body>
+
+</html>

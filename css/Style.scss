@@ -1,0 +1,93 @@
+$yellow: #c1e61f;
+$red: #bf0808;
+$green: #24b012;
+$white: #ffffff;
+$black: black;
+$purpura: #9c34e2;
+// $purpura: #7b16ad;
+
+@mixin margen-top($top) {
+    margin-top: $top;
+}
+
+@mixin mrg-pdd($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin colores($color) {
+    background-color: $color;
+}
+
+.row{
+    @include mrg-pdd(0px, 10px);
+}
+
+.jumbotron{
+    background: $purpura;
+    background: -moz-linear-gradient(top, rgba(123,22,173,1) 0%, rgba(123,22,173,1) 9%, rgba(142,72,189,1) 44%, rgba(223,200,230,1) 88%, rgba(223,200,230,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(123,22,173,1)), color-stop(9%, rgba(123,22,173,1)), color-stop(44%, rgba(142,72,189,1)), color-stop(88%, rgba(223,200,230,1)), color-stop(100%, rgba(223,200,230,1)));
+    background: -webkit-linear-gradient(top, rgba(123,22,173,1) 0%, rgba(123,22,173,1) 9%, rgba(142,72,189,1) 44%, rgba(223,200,230,1) 88%, rgba(223,200,230,1) 100%);
+    background: -o-linear-gradient(top, rgba(123,22,173,1) 0%, rgba(123,22,173,1) 9%, rgba(142,72,189,1) 44%, rgba(223,200,230,1) 88%, rgba(223,200,230,1) 100%);
+    background: -ms-linear-gradient(top, rgba(123,22,173,1) 0%, rgba(123,22,173,1) 9%, rgba(142,72,189,1) 44%, rgba(223,200,230,1) 88%, rgba(223,200,230,1) 100%);
+    background: linear-gradient(to bottom, rgba(123,22,173,1) 0%, rgba(123,22,173,1) 9%, rgba(142,72,189,1) 44%, rgba(223,200,230,1) 88%, rgba(223,200,230,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7b16ad', endColorstr='#dfc8e6', GradientType=0 );
+    width: 100%;
+    color: $white;
+    border-radius: 0px;
+    @include margen-top(50px);
+}
+
+
+.card-skill{
+    flex: 1 300px;
+    @include mrg-pdd(25px, 0px);
+    border-color: rgba(107, 105, 105, 0.37);
+    -webkit-box-shadow: 10px 10px 9px 0px rgba(204,194,204,1);
+    -moz-box-shadow: 10px 10px 9px 0px rgba(204,194,204,1);
+    box-shadow: 10px 10px 9px 0px rgba(204,194,204,1);;
+}
+
+.btn-prod{
+    width: 100%;
+
+}
+
+.footer-nav{
+    padding: 0 80px 20px;
+    @include margen-top(50px);
+    
+}
+
+.card-footer{
+    @include colores($white);
+    border-top: 0px;
+}
+
+.footer-nav p {
+    margin: 0;
+}
+
+.informacion{
+    margin-bottom: 35px;
+}
+
+.footer-icon{
+    margin: 0 8px;
+    text-align: center;
+    padding: 2px;
+}
+
+#nav-tab{
+    margin-bottom: 30px;
+}
+#btn-index{
+    text-decoration: none;
+    color: $black;
+}
+.accordion{
+    padding: 20px;
+}
+.coll{
+    text-align: center;
+}
